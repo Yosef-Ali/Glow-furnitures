@@ -9,12 +9,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import { FaCartPlus } from 'react-icons/fa';
-
+import { FaCartPlus } from "react-icons/fa"
 import "bootstrap/dist/css/bootstrap.css"
 import "./layout.css"
 
-const Layout = ({ children }) => <>{children}</>
+import Navbar from "./Global/Navbar"
+
+const Layout = ({ children }) => (
+  <>
+    <Navbar />
+    {children}
+  </>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
