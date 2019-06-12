@@ -1,6 +1,6 @@
 :root {
   --mainGreen: #2d8e3a;
-  --secondaryGreen: #6d9d30;
+  --secondaryGreen: rgb(166, 206, 114);
   --mainGrey: #777673;
   --mainWhite: #fff;
   --mainDark: #222;
@@ -20,11 +20,39 @@ h6 {
   font-family: "Courier New", Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
-.text-yellow {
+.text-green {
   color: var(--mainGreen);
 }
 .cart-icon {
   cursor: pointer;
   color: var(--mainGreen);
   font-size: 2rem;
+}
+
+.logo {
+  max-width: 50%;
+}
+.default-background,
+.about-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(1, 39, 18, 0.5), rgba(1, 39, 18, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+.about-background {
+  min-height: 40vh;
+}
+.btn-green {
+  color: var(--mainGreen);
+  border-color: var(--mainGreen);
+}
+.btn-green:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.footer {
+  background: var(--mainWhite);
 }
